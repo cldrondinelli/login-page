@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    body {
+        font-family: "Oswald", sans-serif;
+        color: whitesmoke;
+    }
+}
+
+.full-screen-container {
+    background: rgb(107, 81, 26);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.login-container {
+    background-color: hsla(0, 0%, 100%, 0.199);
+    box-shadow: 0 0 15px 0 rgb(255, 255, 255);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-group label {
+    font-weight: lighter;
+}
+
+.input-group input {
+    padding: 1.25rem;
+    background-color:whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: lighter;
+}
+
+.input-group input:focus{
+    box-shadow: 0 0 0 2px rgb(107, 81, 26);
+}
+
+.input-group .msg {
+    display: none;
+    font-size: .75rem;
+}
+
+.login-btn {
+    padding: .5rem 1em;
+    font-size: 1.5rem;
+    border: 2px solid rgb(61, 42, 0);
+    color: whitesmoke;
+    background-color: rgb(107, 81, 26);
+    border-radius: .25rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    color: whitesmoke;
+    background-color: rgb(61, 42, 0);
+    box-shadow: 0 0 0 2px rgb(107, 81, 26);
+}
